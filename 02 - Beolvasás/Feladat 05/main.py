@@ -1,9 +1,13 @@
-egyuttes: str = None
-szam: str = None
-hossz: str = None
+band: str = None
+music: str = None
+lenght: str = None
 
 from os import system
 
-egyuttes = str(input("Kérem adja meg a kedvenc együttesének nevét: "))
-szam = str(input("Adja meg a kedvenc számának címét: "))
-hossz = str(input("Adja meg ennek a számnak a hosszát"))
+band = str(input("Kérem adja meg a kedvenc együttesének nevét: "))
+music = str(input("Adja meg a kedvenc számának címét: "))
+lenght = str(input("Adja meg ennek a számnak a hosszát"))
+
+system('cls')
+
+print(f"Az ön kedven együttesének {band} a legjobb zeneszáma {music} melynek hossza {lenght} perc")

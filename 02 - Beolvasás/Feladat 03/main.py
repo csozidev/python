@@ -3,8 +3,11 @@ height: float = None
 
 from os import system
 
-name = str(input("Kérem adja meg a teljes nevét: "))
-height = float(input("Kérem adja meg a magasságát (m): "))
+print("Kérem adja meg a teljes nevét: ")
+name = str(input(""))
+
+print("Kérem adja meg a magasságát (m): ")
+height = float(input(""))
 
 system('cls')
 

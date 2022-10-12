@@ -5,8 +5,11 @@ from http.client import BAD_GATEWAY
 from importlib import import_module
 from os import system
 
-name = str(input("Kérem adja meg a teljes nevét: "))
-bday = str(input("Kérem adja meg a születési dátumát: "))
+print("Kérem adja meg a teljes nevét: ")
+name = str(input(""))
+
+print("Kérem adja meg a születési dátumát: ")
+bday = str(input(""))
 
 system('cls')
 
