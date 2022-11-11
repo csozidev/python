@@ -13,13 +13,11 @@ system('cls')
 maradek1 = num % 2
 maradek2 = num % 3
 
-if(maradek1 == 0):
-    if(maradek2 == 0):
-        print("ZIZI")
-    else:
-        print("BIZ")
+if(maradek1 == 0 and maradek2 == 0):
+    print("ZIZI")
+elif(maradek1 == 0 and maradek2 != 0):
+    print("BIZ")
+elif(maradek1 != 0 and maradek2 == 0):
+    print("BAZ")
 else:
-    if(maradek2 == 0):
-        print("BAZ")
-    else:
-        print("Nem osztható semmivel sem")
+    print("Nem osztható semmivel sem")

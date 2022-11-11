@@ -16,13 +16,14 @@ z = int(input(""))
 maradeky= x % y
 maradekz= x % z
 
-if(maradeky == 0):
-    if(maradekz == 0):
-        print("X osztható a másik kettő számmal")
-    else:
-        print("X osztható y-nal")
+system('cls')
+
+if(maradeky == 0 and maradekz == 0):
+    print("X osztható a másik kettő számmal")
+elif(maradeky == 0 and maradekz != 0):
+    print("X osztható y-nal")
+elif(maradeky != 0 and maradekz == 0):
+    print("X osztható Z-vel")
 else:
-    if(maradekz == 0):
-        print("X osztható Z-vel")
-    else:
-        print("Nem oszható semelyik számmal sem")
+    print("Nem oszható semelyik számmal sem")
+
