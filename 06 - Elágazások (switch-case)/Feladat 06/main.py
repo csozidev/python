@@ -1,29 +1,25 @@
 from os import system
+import math
 
 print("Téglalap hossza: ")
 a = int(input(""))
 print("Téglalap szélessége: ")
 b = int(input(""))
+print("Kiszámolandó: (t/k/a)")
+algorithm = str(input(""))
 
 system('cls')
 
-ans=True
-while ans:
-    print("""
-    1.Add a Student
-    2.Delete a Student
-    3.Look Up Student Record
-    4.Exit/Quit
-    """)
-    ans=raw_input("What would you like to do? ")
-    if ans=="1":
-      print("\nStudent Added")
-    elif ans=="2":
-      print("\n Student Deleted")
-    elif ans=="3":
-      print("\n Student Record Found")
-    elif ans=="4":
-      print("\n Goodbye") 
-      ans = None
-    else:
-       print("\n Not Valid Choice Try again")
+match algorithm:
+  case "t":
+    i = a * b
+    print(f"A téglalap területe: {i}")
+  case "k":
+    i = a + a + b + b
+    print(f"A téglalap kerülete: {i}")
+  case "a":
+    i = math.sqrt( math.pow(a, 2) + math.pow(a, 2))
+    print(f"A téglalap átlója: {i}")
+  case _:
+    print("Érvénytelen")
+  
