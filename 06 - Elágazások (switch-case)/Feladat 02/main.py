@@ -1,34 +1,34 @@
 from os import system
 
 print("Kérem a hónap nevét")
-month = str(input(""))
+month = str(input("")).lower().strip()
 
 system('cls')
 
 match month:
-    case "Január":
+    case "január":
         print("1")
-    case "Február":
+    case "február":
         print("2")
-    case "Március":
+    case "március":
         print("3")
-    case "Április":
+    case "április":
         print("4")
-    case "Május":
+    case "május":
         print("5")
-    case "Június":
+    case "június":
         print("6")
-    case "Július":
+    case "július":
         print("7")
-    case "Augusztus":
+    case "augusztus":
         print("8")
-    case "Szeptember":
+    case "szeptember":
         print("9")
-    case "Október":
+    case "október":
         print("10")
-    case "November":
+    case "november":
         print("11")
-    case "December":
+    case "december":
         print("12")
     case _:
         print("Nincsen ilyen hónap")

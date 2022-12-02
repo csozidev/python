@@ -5,7 +5,7 @@ a = int(input(""))
 print("Kérem a második számot: ")
 b = int(input(""))
 print("Kérem a műveletet:" )
-c = str(input(""))
+c = str(input("")).strip()
 
 system('cls')
 

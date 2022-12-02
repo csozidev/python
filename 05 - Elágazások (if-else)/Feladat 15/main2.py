@@ -17,29 +17,27 @@ kola: bool=False
 
 print("Előételek:")
 
-print("Zöldségleves [1]:")
-print("Húsleves [2]:")
-print("Gyümölcsleves [3]:")
-
-print("Melyik előételt fogyasztottad:")
-eloetel = int(input(""))
+zoldlev = input('Zöldségleves [i]').lower().strip() == 'i'
+huslev = input('Húsleves [i]').lower().strip() == 'i'
+gyumlev = input('Gyümölcsleves [i]').lower().strip() == 'i'
 
 print("Főétel:")
 
-print("Sült csirkecomb [1]:")
-print("Sült csirkemell [2]:")
-print("Rakott zöldség [3]:")
-print("Spagetti [4]:")
-print("Pizza [5]:")
-
-print("Melyik főételt fogyasztottad:")
-foetel = int(input(""))
+sultcsirkcomb = input('Sült csirkecomb [i]').lower().strip() == 'i'
+sultcsirkmell = input('Sült csirkemell [i]').lower().strip() == 'i'
+rakottzold = input('Rekottzöldség [i]').lower().strip() == 'i'
+spagetti = input('Spagetti [i]').lower().strip() == 'i'
+pizza = input('Pizza [i]').lower().strip() == 'i'
 
 print("Köret:")
 
-print("Rizs [1]:")
-print("Pároltzöldség [2]:")
-print("Gyümölcs [3]:")
-print("Sültkrumpli [4]:")
-print("Saláta [5]:")
-print("Kóla [6]:")
+
+rizs = input('Rizs [i]').lower().strip() == 'i'
+paroltzold = input('Párolt zöldség [i]').lower().strip() == 'i'
+gyumolcs = input('Gyümölcs [i]').lower().strip() == 'i'
+sultkrumpli = input('Sültkrumpli [i]').lower().strip() == 'i'
+salata = input('Saláta [i]').lower().strip() == 'i'
+kola = input('Kóla [i]').lower().strip() == 'i'
+
+if():
+    ertekeles = "Kiváló"
